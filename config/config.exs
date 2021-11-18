@@ -7,8 +7,8 @@
 # General application configuration
 import Config
 
-config :learn_logging,
-  ecto_repos: [LearnLogging.Repo]
+# config :learn_logging,
+#   ecto_repos: [LearnLogging.Repo]
 
 # Configures the endpoint
 config :learn_logging, LearnLoggingWeb.Endpoint,
