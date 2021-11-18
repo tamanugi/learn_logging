@@ -9,7 +9,7 @@ defmodule LearnLogging.Application do
   def start(_type, _args) do
     children = [
       # Start the Ecto repository
-      LearnLogging.Repo,
+      # LearnLogging.Repo,
       # Start the Telemetry supervisor
       LearnLoggingWeb.Telemetry,
       # Start the PubSub system

@@ -21,9 +21,11 @@ defmodule LearnLoggingWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", LearnLoggingWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", LearnLoggingWeb do
+    pipe_through :api
+
+    get "/", ArticleController, :index
+  end
 
   # Enables LiveDashboard only for development
   #
